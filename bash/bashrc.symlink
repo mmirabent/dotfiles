@@ -1,0 +1,16 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+# shortcut to the dotfiles path
+export DOTS=($HOME/.dotfiles)
+
+# Print dots
+for f in $DOTS/*/*.bash
+do
+	source $f
+done
+
