@@ -1,1 +1,4 @@
-alias agent="eval $(ssh-agent -s)"
+function agent {
+ eval $(ssh-agent -s)
+ ssh-add
+}
