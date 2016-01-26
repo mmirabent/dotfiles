@@ -1,0 +1,12 @@
+# Bash Profile
+
+# If bashrc exists, load it
+[[ -f ~/.bashrc ]] && . ~/.bashrc
+
+if [[ ! -v $SSH_AUTH_SOCK ]]
+then
+	eval $(ssh-agent -s)
+fi
+
+export FOOBAR
+
